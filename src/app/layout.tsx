@@ -1,5 +1,6 @@
 import "./global.scss"
 import { Roboto } from 'next/font/google'
+import Logo from "../assets/Logo.svg"
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '700'], variable: '--Robot'})
 
@@ -15,7 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <header>
+          <img src={Logo.src} />
+        </header>
+        {children}
+        </body>
     </html>
   )
 }
