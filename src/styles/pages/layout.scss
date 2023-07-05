@@ -1,0 +1,16 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+
+  header {
+    padding: 2rem;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+}
+
